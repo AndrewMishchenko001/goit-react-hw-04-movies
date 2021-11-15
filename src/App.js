@@ -1,18 +1,18 @@
-import { lazy, Suspense } from 'react';
-import { Switch, Route } from 'react-router-dom';
-import { ToastContainer } from 'react-toastify';
-import AppBar from './components/AppBar';
-import Container from './components/Container';
-import Loader from './components/Loader';
+import { lazy, Suspense } from "react";
+import { Switch, Route } from "react-router-dom";
+import { ToastContainer } from "react-toastify";
+import AppBar from "./components/AppBar";
+import Container from "./components/Container";
+import Loader from "./components/Loader";
 
 const Home = lazy(() =>
-  import('./views/HomeView' /*webpackChunkName: "Home-view" */),
+  import("./views/HomeView" /*webpackChunkName: "Home-view" */)
 );
 const Movies = lazy(() =>
-  import('./views/MoviesVeiw' /*webpackChunkName: "Movies-view" */),
+  import("./views/MoviesVeiw" /*webpackChunkName: "Movies-view" */)
 );
 const FullInfo = lazy(() =>
-  import('./views/FullInfoView' /*webpackChunkName: "FullInfoMovie-view" */),
+  import("./views/FullInfoView" /*webpackChunkName: "FullInfoMovie-view" */)
 );
 
 export default function App() {

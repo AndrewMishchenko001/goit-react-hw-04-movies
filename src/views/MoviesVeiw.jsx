@@ -56,7 +56,7 @@ export default function MoviesView() {
           <ul className={s.moviesList}>
             {movie.map(movies => (
               <li key={movies.id} className={s.moviesItem}>
-                <Link to={`${url}/${movie.id}`}>
+                <Link to={`${url}/${movies.id}`}>
                   <img
                     src={`https://image.tmdb.org/t/p/w500/${movies.poster_path}`}
                     alt={movies.title}

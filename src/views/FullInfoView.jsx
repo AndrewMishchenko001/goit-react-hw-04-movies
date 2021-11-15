@@ -25,13 +25,12 @@ export default function FullInfoView() {
   const history = useHistory();
   const location = useLocation();
   const { movieId } = useParams();
-  const { url, path } = useRouteMatch();
+  const { url, path} = useRouteMatch();
   const [movie, setMovies] = useState(null);
   const [error, setError] = useState(null);
   const [status, setStatus] = useState(Status.IDLE);
 
   useEffect(() => {
-    // setStatus(Status.PENDING);
     moviesAPI
       .fetchMoviesFullInfo(movieId)
       .then(({ poster_path, original_title, popularity, overview, genres }) => {
@@ -60,7 +59,7 @@ export default function FullInfoView() {
         &#9754; Go back
       </button>
       {status === Status.PENDING && <Loader />}
-      {status === Status.REJCECTED && <ErrorMessage message={error} />}
+      {status === Status.REJECTED && <ErrorMessage message={error} />}
       {status === Status.RESOLVED && (
         <>
           <div className={s.filmInfo}>
