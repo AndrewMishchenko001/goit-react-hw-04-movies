@@ -1,5 +1,3 @@
-// import PropTypes from 'prop-types';
-
 const BASE_URL = 'https://api.themoviedb.org/3/';
 
 const API_KEY = '9f052bf1a80b36b24618f47f3bf5703f';

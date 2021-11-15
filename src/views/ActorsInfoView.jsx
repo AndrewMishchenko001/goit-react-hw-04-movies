@@ -14,7 +14,6 @@ export default function ActorsInfo() {
   const [status, setStatus] = useState(Status.IDLE);
 
   useEffect(() => {
-    // setStatus(Status.PENDING);
     moviesAPI
       .fetchMoviesActorsInfo(movieId)
       .then(({ cast }) => {
