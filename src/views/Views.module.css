@@ -1,0 +1,131 @@
+.main {
+  padding: 40px 0;
+  text-align: left;
+}
+
+.filmInfo {
+  display: flex;
+  margin-left: 100px;
+}
+
+.infoWrapper {
+  text-align: center;
+
+  padding: 20px;
+}
+
+.moviesList {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+
+  padding-bottom: 40px;
+}
+
+.moviesItem {
+  margin: 15px;
+}
+
+.fullInfoMovieImg {
+  max-width: 320px;
+  height: 500px;
+  margin-bottom: 20px;
+  border-radius: 5px;
+  object-fit: cover;
+}
+
+.title {
+  margin-bottom: 20px;
+  font-weight: 700;
+  font-size: 30px;
+  line-height: 1.1667;
+  letter-spacing: 0.03em;
+  text-align: center;
+}
+
+.score {
+  margin-bottom: 30px;
+  font-size: 18px;
+  text-align: center;
+}
+
+.genre {
+  display: flex;
+  align-items: center;
+}
+
+.genre li:not(:last-child)::after {
+  content: ',';
+  margin-right: 5px;
+}
+
+.actorsInfoList {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin: -10px;
+  text-align: center;
+  list-style: none;
+}
+
+.actorsInfoItem {
+  margin: 10px;
+  width: 400px;
+  padding: 5px;
+  border-radius: 5px;
+  overflow: hidden;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+  background-color: #e8eaee;
+  transition: 0.25s;
+}
+
+.item:hover {
+  transform: scale(1.03);
+  box-shadow: 0 2px 4px rgba(49, 83, 236, 0.548);
+}
+
+.actorsInfoImg {
+  width: 400px;
+  height: auto;
+}
+
+.button {
+  height: 47px;
+  margin-bottom: 20px;
+  padding: 10px 20px;
+  background-color: #d4d6ce;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+  border: none;
+  outline: none;
+  opacity: 1;
+  transition: opacity 250ms;
+  cursor: pointer;
+  border-radius: 4px;
+
+  color: #03aaf1;
+  font-weight: 500;
+  font-size: 20px;
+}
+
+.button:hover,
+.button:focus {
+  opacity: 0.8;
+}
+
+.nav {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 30px;
+
+  padding: 20px 40px;
+  border-top: 2px solid #2a363b;
+}
+
+.link {
+  margin-right: 24px;
+  font-weight: 500;
+  font-size: 18px;
+  text-decoration: none;
+  color: #2a363b;
+}
