@@ -83,12 +83,13 @@ export default function FullInfoView() {
           </div>
           <ul className={s.nav}>
             <li className={s.linkItems}>
-              <NavLink to={`${url}/cast`} className={s.link}>
+              <NavLink to={{pathname:`${url}/cast`, state:{from: history.location.state.from }}}  className={s.link}>
                 Cast
               </NavLink>
             </li>
             <li>
-              <NavLink to={`${url}/reviews`} className={s.link}>
+              {/* <NavLink to={``} className={s.link}> */}
+                <NavLink to={{pathname:`${url}/reviews`, state:{from: history.location.state.from }}} className={s.link}>
                 Reviews
               </NavLink>
             </li>
